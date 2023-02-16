@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>年味金曲知多少</title>
+  <script>
+    (function (w, d, s, q, i) {
+      w[q] = w[q] || [];
+      var f = d.getElementsByTagName(s)[0], j = d.createElement(s);
+      j.async = true;
+      j.id = 'beacon-aplus';
+      j.src = 'https://d.alicdn.com/alilog/mlog/aplus/' + i + '.js';
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'aplus_queue', '203467608');
+    //集成应用的appKey
+    aplus_queue.push({
+      action: 'aplus.setMetaInfo',
+      arguments: ['appKey', '63be787bba6a5259c4e84680']
+    });
+    /************************以下内容为可选配置内容****************************/
+    // sdk提供手动pv发送机制，启用手动pv(即关闭自动pv)，需设置aplus-waiting=MAN;
+    // 注意：由于单页面路由改变时不会刷新页面，无法自动发送pv，所以对于单页应用，强烈建议您关闭自动PV, 手动控制PV事件
+    aplus_queue.push({
+      action: 'aplus.setMetaInfo',
+      arguments: ['aplus-waiting', 'MAN']
+    });
+    // 是否开启调试模式 
+    aplus_queue.push({
+      action: 'aplus.setMetaInfo',
+      arguments: ['DEBUG', true]
+    });
+  </script>
+</head>
+
+<body>
+  <div id="app"></div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+<script>
+  // 移动端加载控制台组件
+  // if (/mobile/i.test(navigator.userAgent)) {
+  //   var elem = document.createElement("script");
+  //   elem.setAttribute("type", "text/javascript");
+  //   elem.setAttribute("src", "https://dccqcdn.tingmall.com/vivo_guess/js/eruda.js")
+  //   document.body.appendChild(elem);
+  //   elem.onload = function () {
+  //     eruda.init();
+  //   };
+  // }
+</script>
+
+</html>

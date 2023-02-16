@@ -1,0 +1,111 @@
+/* 初始化基础样式 */
+body,
+html,
+ul,
+li,
+p,
+a,
+div,
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    text-align: center;
+    font-weight: normal;
+}
+
+img {
+    border: none;
+    font-size: 0;
+}
+
+a {
+    color: #71777d;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul,
+li {
+    list-style-type: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+input {
+    border: none;
+    outline: none;
+}
+
+.none {
+    display: none !important;
+}
+
+.img-bg {
+    width: 100%;
+    height: auto;
+}
+
+.img-btn {
+    width: 100%;
+    height: 100%;
+}
+
+/* 字体 */
+
+@font-face {
+    font-family: 'WenYue-XinQingNianTi-NC';
+    src: url('./font/WenYue-XinQingNianTi-W8-J-2.otf');
+}
+
+/* @font-face {
+    font-family: 'FZLTZHJW';
+    src: url('./font/FZLTZHJW.TTF');
+} */
+
+/* @font-face {
+    font-family: 'Alibaba-PuHuiTi-Regular';
+    src: url('./font/Alibaba-PuHuiTi-Regular.ttf');
+} */
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+:root {
+  --van-overlay-background: rgba(5, 5, 5, 0.90);
+  --van-dialog-background: transparent!important;
+  --van-overlay-background: rgba(5, 5, 5, 0.80);
+}
+
+.dialog-overlay {
+    --van-overlay-background:rgba(5,5,5,0.87)!important;
+}
